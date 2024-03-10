@@ -24,6 +24,9 @@ module "vpc-us-east-1" {
   environment = "dev"
 
   nat_gw                   = false
-  endpoint_ecr             = true
+  endpoint_ecr             = false
   endpoint_secrets_manager = false
+  endpoint_sts             = false
+  endpoint_kms             = false
+  endpoint_cloudwatch      = false
 }
